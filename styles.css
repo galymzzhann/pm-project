@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f9fb;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+  background-color: #6c63ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav li {
+  font-size: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Root Container */
+#root {
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h2 {
+  font-size: 2rem;
+  color: #4a4a4a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Habit Lists */
+#good-habits-list, #bad-habits-list {
+  margin-top: 20px;
+}
+
+.habit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.habit:hover {
+  background-color: #e7e7e7;
+}
+
+.habit span {
+  font-size: 1.1rem;
+  color: #4a4a4a;
+}
+
+button {
+  background-color: #6c63ff;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #574bdb;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Add Habit Button */
+button#add-good-habit, button#add-bad-habit {
+  background-color: #32cd32;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+button#add-good-habit:hover, button#add-bad-habit:hover {
+  background-color: #228b22;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  #root {
+    padding: 15px;
+  }
+
+  .habit {
+    justify-content: center;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+/* Add styles for the habit images */
+.habit-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Make sure to style the habit list and buttons well */
+button {
+  margin-left: 10px;
+}
+
+.habit {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#good-habits-list, #bad-habits-list {
+  margin-top: 20px;
+}
+
+#good-habits-list p, #bad-habits-list p {
+  color: #888;
+}
